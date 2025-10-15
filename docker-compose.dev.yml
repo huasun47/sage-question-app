@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # 开发环境应用
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: sage-question-app:dev
+    container_name: sage-question-app-dev
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - sage-dev-network
+    command: pnpm dev
+
+networks:
+  sage-dev-network:
+    driver: bridge
