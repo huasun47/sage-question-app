@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 圆形背景 -->
+  <rect width="32" height="32" rx="6" fill="url(#favBgGradient)"/>
+
+  <!-- 简化的问号图标 -->
+  <g transform="translate(16, 16)">
+    <!-- 问号主体 -->
+    <path d="M -6,-8 C -6,-12 -3,-14 0,-14 C 3,-14 6,-12 6,-8 C 6,-5 4,-3 2,-2 L 2,2 L -2,2 L -2,-2 C -4,-3 -6,-5 -6,-8 Z"
+          fill="#ffffff"/>
+
+    <!-- 问号点 -->
+    <circle cx="0" cy="6" r="1.5" fill="#ffffff"/>
+  </g>
+</svg>

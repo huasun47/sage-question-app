@@ -1,0 +1,53 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变定义 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- 圆形背景 -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" filter="url(#shadow)"/>
+
+  <!-- 智慧之书/问答符号 -->
+  <g transform="translate(100, 100)">
+    <!-- 书本/问号组合图标 -->
+    <g fill="url(#iconGradient)">
+      <!-- 书本底部 -->
+      <rect x="-35" y="-10" width="70" height="45" rx="3" fill="url(#iconGradient)" opacity="0.9"/>
+
+      <!-- 问号主体 -->
+      <path d="M -15,-25 C -15,-35 -8,-42 2,-42 C 12,-42 19,-35 19,-25 C 19,-18 15,-15 10,-12 L 10,-5 L -6,-5 L -6,-12 C -11,-15 -15,-18 -15,-25 Z"
+            fill="url(#iconGradient)" stroke="none"/>
+
+      <!-- 问号点 -->
+      <circle cx="2" cy="8" r="4" fill="url(#iconGradient)"/>
+
+      <!-- 装饰线条 -->
+      <line x1="-25" y1="5" x2="25" y2="5" stroke="url(#iconGradient)" stroke-width="2" opacity="0.6"/>
+      <line x1="-25" y1="15" x2="25" y2="15" stroke="url(#iconGradient)" stroke-width="2" opacity="0.6"/>
+      <line x1="-25" y1="25" x2="15" y2="25" stroke="url(#iconGradient)" stroke-width="2" opacity="0.6"/>
+    </g>
+
+    <!-- 装饰性光点 -->
+    <g opacity="0.8">
+      <circle cx="-35" cy="-35" r="3" fill="#ffffff" opacity="0.6"/>
+      <circle cx="35" cy="-35" r="2" fill="#ffffff" opacity="0.4"/>
+      <circle cx="35" cy="35" r="2.5" fill="#ffffff" opacity="0.5"/>
+      <circle cx="-35" cy="35" r="2" fill="#ffffff" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- 品牌文字 (可选) -->
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle" fill="url(#bgGradient)">Sage Question</text>
+</svg>

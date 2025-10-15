@@ -1,6 +1,12 @@
-# Sage Question - 智能自测知识应用
+<h1 align="center">Sage Question - 一个简单的自测知识点应用</h1>
 
-一个功能完整的自测知识应用，支持题库管理、考试计时、错题本等功能。
+<p align="center">
+  一个功能完整的自测知识应用，支持题库管理、考试计时、错题本等功能。
+</p>
+
+<p align="center">
+  <img src="./public/logo.svg" alt="Sage Question Icon" width="120"/>
+</p>
 
 ## 功能特性
 

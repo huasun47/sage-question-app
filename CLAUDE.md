@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目概述
 
-这是一个基于 Next.js 15 的智能自测知识应用，名为 Sage Question。应用支持题库管理、考试计时、错题本等功能，使用 Supabase 作为后端数据库。
+这是一个基于 Next.js 15 的一个简单的自测知识点应用，名为 Sage Question。应用支持题库管理、考试计时、错题本等功能，使用 Supabase 作为后端数据库。
 
 ## 常用开发命令
 

@@ -1,0 +1,48 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="appBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="appIconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="appShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- 圆角方形背景 -->
+  <rect x="16" y="16" width="160" height="160" rx="36" fill="url(#appBgGradient)" filter="url(#appShadow)"/>
+
+  <!-- 主图标 -->
+  <g transform="translate(96, 96)">
+    <!-- 智慧之书 -->
+    <g fill="url(#appIconGradient)">
+      <!-- 书本底部 -->
+      <rect x="-40" y="-12" width="80" height="52" rx="4" fill="url(#appIconGradient)" opacity="0.95"/>
+
+      <!-- 大问号 -->
+      <path d="M -20,-30 C -20,-42 -11,-50 2,-50 C 15,-50 24,-42 24,-30 C 24,-22 19,-18 13,-15 L 13,-5 L -9,-5 L -9,-15 C -15,-18 -20,-22 -20,-30 Z"
+            fill="url(#appIconGradient)"/>
+
+      <!-- 问号点 -->
+      <circle cx="2" cy="12" r="6" fill="url(#appIconGradient)"/>
+
+      <!-- 装饰线条 -->
+      <line x1="-30" y1="8" x2="30" y2="8" stroke="url(#appIconGradient)" stroke-width="3" opacity="0.7"/>
+      <line x1="-30" y1="20" x2="30" y2="20" stroke="url(#appIconGradient)" stroke-width="3" opacity="0.7"/>
+      <line x1="-30" y1="32" x2="20" y2="32" stroke="url(#appIconGradient)" stroke-width="3" opacity="0.7"/>
+    </g>
+
+    <!-- 装饰性智慧光点 -->
+    <g opacity="0.9">
+      <circle cx="-50" cy="-50" r="4" fill="#ffffff" opacity="0.7"/>
+      <circle cx="50" cy="-50" r="3" fill="#ffffff" opacity="0.5"/>
+      <circle cx="50" cy="50" r="3.5" fill="#ffffff" opacity="0.6"/>
+      <circle cx="-50" cy="50" r="2.5" fill="#ffffff" opacity="0.4"/>
+    </g>
+  </g>
+</svg>
